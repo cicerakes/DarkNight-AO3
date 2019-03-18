@@ -32,7 +32,7 @@ body, #header {
 /*[[cSb]]*/
 
 textarea::-webkit-scrollbar:vertical {
-    border-left: 1px solid #3e3e3e;
+	border-left: 1px solid #3e3e3e;
 }
 
 textarea::-webkit-scrollbar-thumb:vertical {
@@ -40,7 +40,7 @@ textarea::-webkit-scrollbar-thumb:vertical {
 }
 
 textarea::-webkit-scrollbar:horizontal {
-    border-top: 1px solid #3e3e3e;
+	border-top: 1px solid #3e3e3e;
 }
 
 textarea::-webkit-scrollbar-thumb:horizontal {
