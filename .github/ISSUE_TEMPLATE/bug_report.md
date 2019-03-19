@@ -11,7 +11,7 @@ assignees: ''
 - **Link to page where the issue occurs:** 
 
 **Describe the problem**
-A clear and concise description of what the bug is.
+A clear and concise description of what the bug is and/or provide steps to reproduce the issue.
 
-**Screenshots: **
-If applicable, add screenshots to help explain your problem.
+**Screenshots:**
+Add screenshots to help explain your problem.
