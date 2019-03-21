@@ -2,7 +2,7 @@
 
 [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-238b8b.svg)](https://raw.githubusercontent.com/cicerakes/DarkNight-AO3/master/DarkNightAO3.user.css)
 
-A dark/night theme for [archiveofourown.org](archiveofourown.org).  
+A dark/night theme for [archiveofourown.org](https://archiveofourown.org/).  
 To make finding and reading fics easier on your eyes :)
 
 Includes options to change font and colours.  
