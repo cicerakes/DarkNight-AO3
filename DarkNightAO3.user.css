@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name			Dark/Night Archive of Our Own
 @namespace		cicerakes
-@version		1.0.2
+@version		1.0.3
 @description	A dark/night theme for archiveofourown.org.
 @author			cicerakes
 @license		CC-BY-SA-4.0
@@ -314,7 +314,7 @@
 		border-bottom: 1px solid #3e3e3e;
 	}
 
-	.notice, .comment_notice, ul.notes, .caution, .error, .comment_error, .alert .userstuff {
+	.notice, .comment_notice, ul.notes, .caution, .error, .comment_error, .alert .userstuff, .alert.flash {
 		color: #cecece !important;
 		box-shadow: none !important;
 	}
@@ -329,7 +329,7 @@
 		border-color: #726000;
 	}
 
-	.error, .comment_error {
+	.error, .comment_error, .alert.flash {
 		background: #4B1A1A;
 		border-color: #712727;
 	}
