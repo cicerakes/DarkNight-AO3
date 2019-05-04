@@ -1,6 +1,7 @@
 # Dark/Night Archive of Our Own
 
 [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-238b8b.svg)](https://raw.githubusercontent.com/cicerakes/DarkNight-AO3/master/DarkNightAO3.user.css)
+[![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/cicerakes/DarkNight-AO3.svg?label=version)](https://github.com/cicerakes/DarkNight-AO3/tags)
 
 A dark/night theme for [archiveofourown.org](https://archiveofourown.org/).  
 To make finding and reading fics easier on your eyes :)
