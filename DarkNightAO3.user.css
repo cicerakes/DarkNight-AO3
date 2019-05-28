@@ -80,8 +80,12 @@
 		text-shadow: none !important;
 	}
 
-	#workskin .black, #workskin .pesterlog {
+	#workskin .black {
 		color: #cecece;
+	}
+
+	#workskin .black,#workskin .pesterlog,#workskin .white,#workskin .aradia,#workskin .AR,#workskin .dave,#workskin .ARquiusprite,#workskin .athblue,#workskin .athred,#workskin .kankri,#workskin .altkarkat,#workskin .bro,#workskin .davesprite,#workskin .dirk,#workskin .dad,#workskin .pipefan413,#workskin .equius,#workskin .horuss,#workskin .eridan,#workskin .cronus,#workskin .exile,#workskin .feferi,#workskin .meenah,#workskin .gamzee,#workskin .kurloz,#workskin .jade,#workskin .erisolsprite,#workskin .jadesprite,#workskin .jake,#workskin .jane,#workskin .nannasprite,#workskin .jaspersprite,#workskin .mom,#workskin .roxy,#workskin .john,#workskin .tavrisprite,#workskin .kanaya,#workskin .porrim,#workskin .karkat,#workskin .nepeta,#workskin .meulin,#workskin .rose,#workskin .scratch-green,#workskin .scratch,#workskin .scratch-white,#workskin .sollux,#workskin .mituna,#workskin .strider,#workskin .tavros,#workskin .rufioh,#workskin .terezi,#workskin .latula,#workskin .uu,#workskin .uranianumbra,#workskin .calliope,#workskin .undyingumbrage,#workskin .caliborn,#workskin .vriska,#workskin .aranea,#workskin .altcaliborn,#workskin .felt,#workskin .lordenglish {
+		font-size: inherit !important;
 	}
 
 	#footer {
