@@ -131,9 +131,8 @@
 		color: #cecece !important;
 	}
 
-	#header .user .current {
+	#header .user a:hover, #header .user a:focus, #header .user .current {
 		color: #cecece !important;
-		background-color: #1e1e1e;
 	}
 
 	#header .open a {
@@ -149,6 +148,7 @@
 
 	#header a {
 		background: none !important;
+		color: #cecece;
 	}
 
 	#header .search {
@@ -189,10 +189,6 @@
 		border: 1px solid #3e3e3e;
 	}
 
-	.actions a, .actions a:link, .action, .action:link, .actions input, input[type="submit"], button, .actions label {
-		border-color: #3e3e3e;
-	}
-
 	.current {
 		border-color: #888;
 	}
@@ -206,12 +202,10 @@
 	.actions a:hover {
 		background: #3e3e3e !important;
 		box-shadow: none !important;
-		color: #cecece;
 		border-color: #3e3e3e;
 	}
 
 	.actions a:visited {
-		color: #cecece !important;
 		text-shadow: none !important;
 	}
 
@@ -263,16 +257,25 @@
 		text-shadow: none;
 	}
 
-	a:link {
-		color: /*[[lCol]]*/ !important;
+	a, a:link, a:visited:hover {
+		color: /*[[lCol]]*/;
 	}
 
-	a:visited:hover {
+	.actions a, .actions a:link, .action, .action:link, .actions input, input[type="submit"], button, .actions label {
+		color: /*[[lCol]]*/;
+		border-color: #3e3e3e;
+	}
+
+	.actions a:visited, .action:visited, .action a:link, .action a:visited {
+		color: /*[[lCol]]*/;
+	}
+
+	a:visited {
 		color: #666;
 	}
 
 	a.tag, .tags a {
-		color: #cecece !important;
+		color: #cecece;
 		line-height: 1.6;
 	}
 
@@ -650,10 +653,6 @@
 
 	.unread, .unreviewed {
 		background-color: #262626;
-	}
-
-	.actions a {
-		color: #cecece;
 	}
 
 	span.unread, .replied, span.claimed, .actions span.defaulted {
