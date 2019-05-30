@@ -14,6 +14,7 @@
 @var color		fCol	"Font Colour" #CECECE
 @var color		bgCol	"Background Colour" #1E1E1E
 @var color		lCol	"Link/Button Colour" #CECECE
+@var color		vLCol	"Visited Link Colour" #666666
 @var color		tALCol	"Title/Author(s) Link Colour" #C53131
 @var select		cSb		"Custom Scrollbar" {
 	"Enabled": "::-webkit-scrollbar{background-color:/*[[sbBgCol]]*\/;width: 15px}::-webkit-scrollbar-thumb{background-color:/*[[sbBCol]]*\/}::-webkit-scrollbar-thumb:hover{background-color:/*[[sbBHCol]]*\/}textarea::-webkit-scrollbar:vertical{border-left:1px solid #3e3e3e}textarea::-webkit-scrollbar-thumb:vertical{border-left:1px solid #3e3e3e}textarea::-webkit-scrollbar:horizontal{border-top:1px solid #3e3e3e}textarea::-webkit-scrollbar-thumb:horizontal{border-top:1px solid #3e3e3e}::-webkit-scrollbar-corner{background-color:/*[[sbBgCol]]*\/}",
@@ -271,7 +272,7 @@
 	}
 
 	a:visited {
-		color: #666;
+		color: /*[[vLCol]]*/;
 	}
 
 	a.tag, .tags a {
