@@ -283,7 +283,7 @@
 	fieldset {
 		background: #1e1e1e;
 		box-shadow: none;
-		border: 1px solid #3e3e3e;
+		border-color: #3e3e3e;
 	}
 
 	fieldset fieldset, fieldset dl dl, form blockquote.userstuff {
