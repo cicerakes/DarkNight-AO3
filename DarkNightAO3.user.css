@@ -328,12 +328,12 @@
 		border-bottom: 1px solid #3e3e3e;
 	}
 
-	.notice, .comment_notice, ul.notes, .caution, .error, .comment_error, .alert .userstuff, .alert.flash {
+	.notice, .comment_notice, ul.notes, .caution, .error, .comment_error, .alert .userstuff, .alert.flash, .announcement .userstuff {
 		color: #cecece !important;
 		box-shadow: none !important;
 	}
 
-	.notice, .comment_notice, ul.notes {
+	.notice, .comment_notice, ul.notes, .announcement .userstuff {
 		background: #1B374F;
 		border-color: #2E5C84;
 	}
