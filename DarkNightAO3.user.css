@@ -77,6 +77,10 @@
 		font-family: '/*[[tFont]]*/', 'Lucida Sans Unicode', Verdana, sans-serif;
 	}
 
+	blockquote {
+		font-family: '/*[[tFont]]*/', 'Lucida Sans Unicode', Verdana, sans-serif;
+	}
+
 	.splash .intro {
 		background: none;
 		color: #cecece !important;
