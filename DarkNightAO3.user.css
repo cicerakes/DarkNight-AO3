@@ -206,33 +206,8 @@
 		border-color: #888;
 	}
 
-	.actions a {
-		background: #2e2e2e !important;
-		background-image: none !important;
-		text-shadow: none;
-	}
-
-	.actions a:hover {
-		background: #3e3e3e !important;
-		box-shadow: none !important;
-		border-color: #3e3e3e;
-	}
-
 	.actions a:visited {
 		text-shadow: none !important;
-	}
-
-	.actions input, input[type="submit"] {
-		background: #2e2e2e !important;
-		background-image: none;
-		box-shadow: none !important;
-	}
-
-	.actions input:hover, input[type="submit"]:hover {
-		background: #3e3e3e !important;
-		background-image: none;
-		box-shadow: none !important;
-		border-color: #3e3e3e;
 	}
 
 	.actions label {
@@ -281,6 +256,10 @@
 	.actions a, .actions a:link, .action, .action:link, .actions input, input[type="submit"], button, .actions label {
 		color: /*[[lCol]]*/;
 		border-color: #3e3e3e;
+		background: #2e2e2e !important;
+		background-image: linear-gradient(#363636 2%,#262626 95%,#1e1e1e 100%) !important;
+		background-image: -moz-linear-gradient(#363636 2%,#262626 95%,#1e1e1e 100%) !important;
+		background-image: -webkit-linear-gradient(#363636 2%,#262626 95%,#1e1e1e 100%) !important;
 	}
 
 	.actions a:visited, .action:visited, .action a:link, .action a:visited {
@@ -288,7 +267,9 @@
 	}
 
 	.actions a:hover, .actions input:hover, .actions a:focus, .actions input:focus, label.action:hover, .action:hover, .action:focus {
-		color: /*[[bHCol]]*/;
+		color: /*[[bHCol]]*/ !important;
+		box-shadow: inset 2px 2px 2px #111;
+		border-color: #3e3e3e;
 	}
 
 	a:visited {
@@ -401,11 +382,11 @@
 		border: 1px solid #3e3e3e !important;
 	}
 
-	select, input {
+	select, input, textarea {
 		color: #cecece !important;
-		background: #262626!important;
-		box-shadow: none !important;
+		background: #262626 !important;
 		border: 1px solid #3e3e3e;
+		box-shadow: none;
 	}
 
 	.secondary {
@@ -708,10 +689,6 @@
 		color: #cecece;
 	}
 
-	.actions a:hover, .actions input:hover, .actions a:focus, .actions input:focus, label.action:hover, .action:hover, .action:focus {
-		box-shadow: none;
-	}
-
 	.required-tags .rating-notrated, .required-tags .category-none, .required-tags .warning-no {
 		filter: invert(89%);
 	}
@@ -746,11 +723,11 @@
 
 	.filters .expander {
 		color: #cecece;
-		background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMTCtCgrAAAAAOElEQVQoU2OgGPT19f2HMokD586d+0+SJpAGkjTBNBCtCVkDUZoo0kCSk0jyNNGKQYAkxYQBAwMAMBpez8qRxMUAAAAASUVORK5CYII=") left center no-repeat;
+		background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMTCtCgrAAAAAOElEQVQoU2OgGPT19f2HMokD586d+0+SJpAGkjTBNBCtCVkDUZoo0kCSk0jyNNGKQYAkxYQBAwMAMBpez8qRxMUAAAAASUVORK5CYII=") left center no-repeat !important;
 	}
 
 	.filters .expanded .expander {
-		background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuOWwzfk4AAAA0SURBVChTYxikoK+v7/+5c+fwYpAaqHIIwKcJQzEMYNOEUzEMIGsiqBgGQAqJVjzkAAMDAP7MXs9/r5qvAAAAAElFTkSuQmCC") left center no-repeat;
+		background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuOWwzfk4AAAA0SURBVChTYxikoK+v7/+5c+fwYpAaqHIIwKcJQzEMYNOEUzEMIGsiqBgGQAqJVjzkAAMDAP7MXs9/r5qvAAAAAElFTkSuQmCC") left center no-repeat !important;
 	}
 
 	.filters span.indicator {
