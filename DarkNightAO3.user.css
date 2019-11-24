@@ -14,6 +14,7 @@
 @var color		fCol	"Font Colour" #CECECE
 @var color		bgCol	"Background Colour" #1E1E1E
 @var color		lCol	"Link/Button Colour" #CECECE
+@var color		bHCol	"Button Hover Colour" #C53131
 @var color		lHCol	"Link Hover Colour" #888888
 @var color		vLCol	"Visited Link Colour" #666666
 @var color		tALCol	"Title/Author(s) Link Colour" #C53131
@@ -284,6 +285,10 @@
 
 	.actions a:visited, .action:visited, .action a:link, .action a:visited {
 		color: /*[[lCol]]*/;
+	}
+
+	.actions a:hover, .actions input:hover, .actions a:focus, .actions input:focus, label.action:hover, .action:hover, .action:focus {
+		color: /*[[bHCol]]*/;
 	}
 
 	a:visited {
