@@ -206,10 +206,6 @@
 		border: 1px solid #3e3e3e;
 	}
 
-	.current {
-		border-color: #888;
-	}
-
 	.actions a:visited {
 		text-shadow: none !important;
 	}
@@ -274,6 +270,13 @@
 		color: /*[[bHCol]]*/ !important;
 		box-shadow: inset 2px 2px 2px #111;
 		border-color: #3e3e3e;
+	}
+
+	.actions a:active, .current, a.current, a:link.current, .current a:visited {
+		border-color: #2e2e2e;
+		background: #161616;
+		color: #cecece;
+		box-shadow: inset 1px 1px 3px #000;
 	}
 
 	a:visited {
