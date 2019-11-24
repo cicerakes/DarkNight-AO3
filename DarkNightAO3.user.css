@@ -168,6 +168,10 @@
 		height: 30px;
 	}
 
+	#header #search input:focus {
+		color: #cecece !important;
+	}
+
 	#small_login {
 		color: #cecece !important;
 		background: #1e1e1e !important;
