@@ -407,8 +407,17 @@
 		background: #1e1e1e;
 	}
 
-	label {
-		color: #cecece !important;
+	.required {
+		color: #FB3939 !important;
+	}
+
+	.required.notice {
+		color: #FF0000 !important;
+		background: #162D40;
+	}
+
+	.post .required .warnings, dd.required {
+		color: #cecece;
 	}
 
 	.toggled form, .dynamic form {
@@ -434,7 +443,7 @@
 
 	#modal {
 		background: #1e1e1e !important;
-		color: #cecece !important; 
+		color: #cecece !important;
 		border: 10px solid #2e2e2e !important;
 	}
 
