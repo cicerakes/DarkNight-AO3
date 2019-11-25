@@ -148,11 +148,8 @@
 		color: #cecece !important;
 	}
 
-	#header .open a {
-		color: #cecece !important;
-		background: #2e2e2e !important;
-		background-image: none;
-		box-shadow: none !important;
+	#header .open #login-dropdown {
+		background: none !important;
 	}
 
 	#header .actions a:focus {
@@ -186,24 +183,20 @@
 		background: transparent !important;
 	}
 
-	.dropdown #small_login .footnote a:hover {
-		background: #2e2e2e !important;
-	}
-
-	.action, #small_login .action {
+	#small_login .action {
 		color: #cecece !important;
-		background: #2e2e2e;
-		background-image: none;
-		box-shadow: none !important;
+		background-color: #2e2e2e;
 		border: 1px solid #3e3e3e;
 	}
 
-	.action:hover, #small_login .action:hover {
-		color: #cecece !important;
-		background: #3e3e3e;
-		background-image: none;
-		box-shadow: none !important;
+	#small_login .action:hover {
+		color: /*[[bHCol]]*/ !important;
+		background-color: #3e3e3e;
 		border: 1px solid #3e3e3e;
+	}
+
+	#small_login .actions input[type="checkbox"] {
+		box-shadow: none;
 	}
 
 	.actions a:visited {
@@ -212,16 +205,12 @@
 
 	.actions label {
 		color: #cecece !important;
-		background: #2e2e2e !important;
-		background-image: none;
-		box-shadow: none !important;
+		background-color: #2e2e2e !important;
 	}
 
 	.actions label:hover {
 		color: #cecece !important;
-		background: #3e3e3e !important;
-		background-image: none;
-		box-shadow: none !important;
+		background-color: #3e3e3e !important;
 	}
 
 	.action:link {
