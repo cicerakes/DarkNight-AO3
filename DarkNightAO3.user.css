@@ -231,11 +231,6 @@
 
 	.wrapper {
 		box-shadow: none;
-		background-color: #1e1e1e;
-	}
-
-	#outer.wrapper, #inner.wrapper {
-		background-color: #1e1e1e;
 	}
 
 	.heading {
