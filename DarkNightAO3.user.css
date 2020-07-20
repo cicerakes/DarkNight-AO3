@@ -150,7 +150,7 @@
 	}
 
 	#header .user a:hover, #header .user a:focus, #header .user .current {
-		color: #cecece !important;
+		color: /*[[bHCol]]*/ !important;
 	}
 
 	#header .open #login-dropdown {
