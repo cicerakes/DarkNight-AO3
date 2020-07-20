@@ -115,7 +115,7 @@
 	#header .menu {
 		background-image: none;
 		background: #2e2e2e;
-		box-shadow: none;
+		box-shadow: 1px 1px 3px -1px #000;
 	}
 
 	#header .primary .menu .current {
@@ -130,6 +130,7 @@
 	#header .dropdown:hover a {
 		background: #2e2e2e !important;
 		color: #cecece;
+		z-index: 56;
 	}
 
 	#header .dropdown:hover .dropdown-toggle {
@@ -205,6 +206,10 @@
 
 	#small_login .actions input[type="checkbox"] {
 		box-shadow: none;
+	}
+
+	#greeting .menu {
+		box-shadow: -1px 1px 3px -1px #000;
 	}
 
 	.actions a:visited {
