@@ -32,9 +32,9 @@
 ==/UserStyle== */
 
 @-moz-document domain("archiveofourown.org"){
-	body, #header {
+	body, .toggled form, .dynamic form, .secondary, .dropdown {
 		background: /*[[bgCol]]*/;
-		color: #cecece;
+		color: /*[[fCol]]*/;
 	}
 
 	/*[[cSb]]*/
@@ -53,6 +53,10 @@
 
 	textarea::-webkit-scrollbar-thumb:horizontal {
 		border-top: 1px solid #3e3e3e;
+	}
+
+	a, a:link {
+		color: /*[[lCol]]*/;
 	}
 
 	#main, #outer {
@@ -151,6 +155,10 @@
 
 	#header .user a:hover, #header .user a:focus, #header .user .current {
 		color: /*[[bHCol]]*/;
+	}
+
+	#header .dropdown .menu a:hover, #header .dropdown .menu a:focus {
+		background: #3a3a3a;
 	}
 
 	#header .open #login-dropdown {
