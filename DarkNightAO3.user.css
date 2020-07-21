@@ -35,7 +35,9 @@
 	:root {
 		--bg-color: /*[[bgCol]]*/;
 		--text-color: /*[[fCol]]*/;
-		--border-color-ddd: #3a3a3a;
+		--color-bbb: #5a5a5a;
+		--color-ddd: #3a3a3a;
+		--color-fff: #1a1a1a;
 	}
 
 	body, .toggled form, .dynamic form, .secondary, .dropdown {
@@ -74,11 +76,37 @@
 	}
 
 	li.blurb, fieldset, form dl {
-		border-color: var(--border-color-ddd);
+		border-color: var(--color-ddd);
 	}
 
 	blockquote, pre {
 		font-family: '/*[[tFont]]*/', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif;
+	}
+
+	table {
+		background: var(--color-ddd);
+	}
+	
+	thead, tfoot {
+		border-bottom-color: var(--color-bbb);
+	}
+	
+	tfoot td {
+		border-top-color: var(--color-bbb);
+	}
+	
+	tbody tr {
+		border-bottom-color: var(--color-fff);
+	}
+	
+	thead td {
+		background: var(--color-ddd);
+		border-bottom-color: var(--color-fff);
+	}
+	
+	th, tr:hover, col.name {
+		background: var(--color-fff);
+		border-color: var(--color-bbb);
 	}
 
 }
