@@ -34,9 +34,13 @@
 @-moz-document domain("archiveofourown.org"){
 	:root {
 		--bg-color: /*[[bgCol]]*/;
+		--link-color: /*[[lCol]]*/;
 		--text-color: /*[[fCol]]*/;
+		--color-888: #8a8a8a;
 		--color-bbb: #5a5a5a;
+		--color-ccc: #4a4a4a;
 		--color-ddd: #3a3a3a;
+		--color-eee: #2a2a2a;
 		--color-fff: #1a1a1a;
 	}
 
@@ -64,7 +68,7 @@
 	}
 
 	a, a:link {
-		color: /*[[lCol]]*/;
+		color: var(--link-color);
 	}
 
 	a:visited {
@@ -107,6 +111,61 @@
 	th, tr:hover, col.name {
 		background: var(--color-fff);
 		border-color: var(--color-bbb);
+	}
+
+	#header a, #header a:visited, #header .current, #header .primary .open a, #header .primary .dropdown:hover a, #header .primary .dropdown a:focus {
+		color: var(--link-color);
+	}
+
+	#header .actions a:hover, #header .actions a:focus, #header .dropdown:hover a, #header .open a {
+		background: var(--color-ddd);
+	}
+
+	#header .current {
+		background: var(--color-ccc);
+	}
+
+	/* Logo
+	#header .heading a {
+		color: #C53131;
+	}*/
+
+	#header .menu, #small_login, #header .dropdown:hover .current+.menu {
+		background: var(--color-ddd);
+		box-shadow: 1px 1px 3px -1px #000;
+		background-image: -moz-linear-gradient(top, rgba(58, 58, 58, .98) 0%, rgba(74, 74, 74, .98) 100%);
+		background-image: -webkit-linear-gradient(top, rgba(58, 58, 58, .98) 0%, rgba(74, 74, 74, .98) 100%);
+		background-image: -o-linear-gradient(top, rgba(58, 58, 58, .98) 0%, rgba(74, 74, 74, .98) 100%);
+		background-image: linear-gradient(to bottom, rgba(58, 58, 58, .98) 0%, rgba(74, 74, 74, 0.98) 100%);
+	}
+
+	#header .menu li {
+		border-bottom-color: var(--color-888);
+	}
+	
+	#header .dropdown .menu a:hover, #header .dropdown .menu a:focus {
+		background: rgba(26, 26, 26, .25);
+	}
+
+	#header .menu .current {
+		color: var(--link-color);
+	}
+	
+	/* Login button hover
+	#header .user a:hover, #header .user a:focus, #header .user .current {
+		color: #900;
+	}*/
+	
+	#login .open a:hover, #login .open a:focus {
+		background: var(--color-eee);
+	}
+
+	#greeting .menu {
+		box-shadow: -1px 1px 3px -1px #000;
+	}
+
+	#small_login {
+		border-color: var(--color-fff);
 	}
 
 }
