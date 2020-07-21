@@ -77,8 +77,11 @@
 		border-color: var(--border-color-ddd);
 	}
 
-
+	blockquote, pre {
+		font-family: '/*[[tFont]]*/', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif;
 	}
+
+}
 
 	@-moz-document domain("archiveofourown.org"){
 	.kudoshits[style="background-color: rgb(253, 242, 163);"] {
