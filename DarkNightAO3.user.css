@@ -15,8 +15,8 @@
 @var color		bgCol	"Background Colour" #1A1A1A
 @var color		lCol	"Link/Button Colour" #CECECE
 @var color		bHCol	"Button Hover Colour" #DD1919
-@var color		lHCol	"Link Hover Colour" #888888
-@var color		vLCol	"Visited Link Colour" #666666
+@var color		lHCol	"Link Hover Colour" #444444
+@var color		vLCol	"Visited Link Colour" #777777
 @var color		tALCol	"Title/Author(s) Link Colour" #C53131
 @var select		sTA		"Summary Text Alignment" {
 	"Justify (AO3 default)": "",
@@ -35,6 +35,7 @@
 	:root {
 		--bg-color: /*[[bgCol]]*/;
 		--text-color: /*[[fCol]]*/;
+		--border-color-ddd: #3a3a3a;
 	}
 
 	body, .toggled form, .dynamic form, .secondary, .dropdown {
@@ -64,8 +65,16 @@
 		color: /*[[lCol]]*/;
 	}
 
+	a:visited {
+		color: /*[[vLCol]]*/;
+	}
+
+	a:hover {
+		color: /*[[lHCol]]*/;
+	}
+
 	li.blurb, fieldset, form dl {
-		border-color: #ddd;
+		border-color: var(--border-color-ddd);
 	}
 
 
@@ -109,7 +118,7 @@
 	}
 
 	#importexport-box {
-		background-color: #1e1e1e;
+		background-color: var(--bg-color);
 		border-color: #2e2e2e;
 	}
 }
