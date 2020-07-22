@@ -99,10 +99,6 @@
 		font-family: '/*[[tFont]]*/', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif;
 	}
 
-	.preface h3 {
-		font-size: /*[[fSize]]*/;
-	}
-
 	.userstuff {
 		font-family: '/*[[tFont]]*/', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif;
 		font-size: /*[[fSize]]*/;
