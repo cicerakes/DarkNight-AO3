@@ -38,13 +38,16 @@
 		--text-color: /*[[fCol]]*/;
 		--red-link-color: /*[[tALCol]]*/;
 		--color-888: #8a8a8a;
+		--color-999: #7a7a7a;
 		--color-bbb: #5a5a5a;
 		--color-ccc: #4a4a4a;
 		--color-ddd: #3a3a3a;
 		--color-eee: #2a2a2a;
+		--color-efd1d1: #4b1a1a;
 		--color-fff: #1a1a1a;
 		--color-rgb-204: 74, 74, 74;
 		--color-rgb-221: 58, 58, 58;
+		--color-rgb-255: 26, 26, 26;
 	}
 
 	body, .toggled form, .dynamic form, .secondary, .dropdown {
@@ -198,6 +201,55 @@
 
 	#footer {
 		border-top-color: var(--bg-color);
+	}
+
+	fieldset, form dl, fieldset dl dl, fieldset fieldset fieldset, fieldset fieldset dl dl, dd.hideme, form blockquote.userstuff {
+		background: var(--color-ddd);
+		border-color: var(--color-eee);
+		box-shadow: inset 1px 0 5px #000;
+	}
+
+	fieldset fieldset, fieldset dl dl, form blockquote.userstuff {
+		background: var(--color-fff);
+	}
+
+	input, textarea {
+		border-color: var(--color-bbb);
+		box-shadow: inset 0 1px 2px #000;
+	}
+
+	input:focus, select:focus, textarea:focus {
+		background: var(--color-eee);
+	}
+
+	form dt {
+		border-bottom-color: var(--color-eee);
+	}
+	
+	form dd.required {
+		color: var(--text-color);
+	}
+	
+	.LV_invalid {
+		background: var(--color-efd1d1);
+		border-color: #900;
+		color: var(--text-color);
+		box-shadow: 1px 1px 2px #900;
+	}
+
+	.autocomplete div.dropdown ul {
+		background: var(--color-fff);
+		border-color: var(--color-eee);
+		color: var(--text-color);
+		background: rgba(var(--color-rgb-255), .9);
+	}
+	
+	.autocomplete .dropdown ul li:hover, li.selected {
+		background: #900;
+	}
+	
+	.required .autocomplete, .autocomplete .notice {
+		color: #cecece;
 	}
 
 }
