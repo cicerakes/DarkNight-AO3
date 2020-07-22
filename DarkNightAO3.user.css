@@ -601,6 +601,10 @@
 		background: var(--color-fff);
 		border-color: var(--color-bbb);
 	}
+
+	#stat_chart {
+		filter: invert(90%) hue-rotate(180deg) saturate(4);
+	}
 }
 
 @-moz-document domain("archiveofourown.org") {
