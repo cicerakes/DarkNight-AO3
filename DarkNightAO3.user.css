@@ -141,6 +141,10 @@
 		background: var(--color-ddd);
 	}
 
+	#header .dropdown:hover a {
+		z-index: 56;
+	}
+
 	#header .current {
 		background: var(--color-ccc);
 	}
