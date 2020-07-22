@@ -32,11 +32,13 @@
 @var color		sbBHCol	"Scrollbar Bar Hover Colour" rgba(102,102,102,0.4)
 ==/UserStyle== */
 
-@-moz-document domain("archiveofourown.org"){
+@-moz-document domain("archiveofourown.org") {
 	:root {
+		--font-size: /*[[fSize]]*/;
 		--bg-color: /*[[bgCol]]*/;
 		--link-color: /*[[lCol]]*/;
 		--text-color: /*[[fCol]]*/;
+		--button-text-color: /*[[bCol]]*/;
 		--red-link-color: /*[[tALCol]]*/;
 		--red-text-color: #aa1818;
 		--color-888: #8a8a8a;
@@ -94,6 +96,15 @@
 
 	blockquote, pre {
 		font-family: '/*[[tFont]]*/', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif;
+	}
+
+	.preface h3 {
+		font-size: /*[[fSize]]*/;
+	}
+
+	.userstuff {
+		font-family: '/*[[tFont]]*/', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif;
+		font-size: /*[[fSize]]*/;
 	}
 
 	table {
@@ -211,6 +222,10 @@
 		box-shadow: inset 1px 0 5px #000;
 	}
 
+	fieldset dl, fieldset.actions, fieldset dl fieldset dl {
+		box-shadow: none;
+	}
+
 	fieldset fieldset, fieldset dl dl, form blockquote.userstuff {
 		background: var(--bg-color);
 	}
@@ -288,7 +303,7 @@
 
 	.actions a, .actions a:link, .action, .action:link, .actions input, input[type="submit"], button, .current, .actions label {
 		background: var(--color-eee);
-		color: /*[[bCol]]*/;
+		color: var(--button-text-color);
 		border-color: var(--color-bbb);
 		background-image: -moz-linear-gradient(var(--color-ccc) 2%, var(--color-eee) 95%, var(--color-fff) 100%);
 		background-image: -webkit-linear-gradient(var(--color-ccc) 2%, var(--color-eee) 95%, var(--color-fff) 100%);
@@ -305,11 +320,11 @@
 	}
 
 	.actions a:visited, .action:visited, .action a:link, .action a:visited {
-		color: /*[[bCol]]*/;
+		color: var(--button-text-color);
 	}
 
 	.actions a:active, .current, a.current, a:link.current, .current a:visited {
-		color: /*[[bCol]]*/;
+		color: var(--button-text-color);
 		background: var(--bg-color);
 		border-color: var(--color-ddd);
 		box-shadow: inset 1px 1px 3px #000;
@@ -354,9 +369,70 @@
 		color: #cecece;
 	}
 
+	.wrapper {
+		box-shadow: 1px 1px 5px #000;
+	}
+
+	dl.index dd {
+		background: var(--color-eee);
+	}
+
+	dl.meta {
+		border-color: var(--color-ccc);
+	}
+
+	li.relationships a {
+		background: var(--color-eee);
+	}
+
+	.statistics .index li:nth-of-type(even) {
+		background: var(--color-eee);
+	}
+
+	.listbox, fieldset fieldset.listbox {
+		background: var(--color-ddd);
+		border-color: var(--color-ccc);
+		box-shadow: 0 0 0 1px var(--bg-color);
+	}
+
+	.listbox>.heading, .listbox .heading a:visited {
+		color: #cecece;
+	}
+	
+	.listbox .index {
+		background: var(--bg-color);
+		box-shadow: inset 1px 1px 3px #000;
+	}
+
+	.listbox li .tags.tree.index {
+		padding: 0 .643em;
+		border: 1px solid var(--color-eee);
+		margin-top: .3em;
+	}
+
+	.blurb h4 a:link, .blurb h4 img {
+		color: var(--red-link-color);
+	}
+
+	.required-tags .rating-notrated, .required-tags .category-none, .required-tags .warning-no {
+		filter: invert(89%);
+	}
+
+	.status .count {
+		filter: invert(89%) hue-rotate(180deg);
+	}
+
+	.status .public {
+		background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAIAAABLixI0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAAKxSURBVEhLpVRNaxNRFL13ZjrNJKQG0bRq/KgUKyoFG1fu3OsfcOm+YNcuFNGFiBZxIYgfqEgWVRA3btyJiNbiRhQVUXFT7KbSNiGTefd5bjJpOs0UaXo4mTfv3bwz9+s9zk4+8bM5MYbSwERVLzBfZ/IL3/0/36T6NzYkwUx1v8CFcy8yA0UT1RkLXXDIzoXZU4svhxpzzz7NZ37NOOFybEui1l9w4BGExIQmSiHWyYS/l+q3b1wd3RZUdx+TviDenYSJjIOh6VGKU03ouhXB81Xl1ujQQK101Hp+05QAk1Wt/0DV4i+9fnxzpDSoco7bWunAChJiyeINhHQ34X3z2cabR1PDe0q10rhdEwq0oCRirF2PQrZBvEqM6O3Da/uG99d3jSXkLGK0rP9UQjYmWwz6EZEIA0nSBaJ3D66UDhwJBw/Gc0CMg12WGvh+h6QahI6zwkaoIZL0q4X39y/vPFwOt4/Ec+ReNxuBCx1iChVGdIIGI0dcSe/k2XuXdowdb2zdqxNB7rFDw1L3VsiQ1A+oc/hFeFsHs3cvFsdPRANDbBGj7okQLelTyRIZlcL+hpoik+tPaagVfLhzoXzytLOlyLnJp16QtcnziGy75CJJDpsFyR/6+fzj9TM/5qtq00gwxBnEkPM8/K18fpqDs9N9XVp6FOAaETrS8fyF5Rp9/kLc7k+VS3QDwfGcz5mJSl82b00UG2Ig881GQJ8a6/o+OQjT6IXQcspZdWCw4rpmaZGDiYqbCdb6lQLsYBSrrRLHqECtoFWvoSfM2p5IJ/oEBdcGbk/bBHQBzdMydyy9EIDPqIC+ofYWp7J3RggOZxtCYUt9E4wQPnpVK9Vl2yD1ToFfbNS1ZPwbJhQYdzQqioZAsTdBVUAdCYmLz3bv0GYxuAtxN2nOmjdM7zTE9h+EDdaz/l4vZQAAAABJRU5ErkJggg==");
+	}
+
+	.status .private .text {
+		filter: invert(89%);
+	}
+
 }
 
-	@-moz-document domain("archiveofourown.org"){
+	@-moz-document domain("archiveofourown.org") {
 	.kudoshits[style="background-color: rgb(253, 242, 163);"] {
 		background-color: #4C4408 !important;
 		color: #cecece;
