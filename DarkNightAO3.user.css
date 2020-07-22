@@ -158,10 +158,9 @@
 		color: var(--link-color);
 	}
 	
-	/* Login button hover
 	#header .user a:hover, #header .user a:focus, #header .user .current {
-		color: #900;
-	}*/
+		color: #DD1919;
+	}
 	
 	#login .open a:hover, #login .open a:focus {
 		background: var(--color-eee);
@@ -289,7 +288,6 @@
 		background: var(--color-eee);
 		color: /*[[bCol]]*/;
 		border-color: var(--color-bbb);
-		border-bottom-color: none;
 		background-image: -moz-linear-gradient(var(--color-ccc) 2%, var(--color-eee) 95%, var(--color-fff) 100%);
 		background-image: -webkit-linear-gradient(var(--color-ccc) 2%, var(--color-eee) 95%, var(--color-fff) 100%);
 		background-image: -o-linear-gradient(var(--color-ccc) 2%, var(--color-eee) 95%, var(--color-fff) 100%);
@@ -302,6 +300,21 @@
 		border-top-color: var(--color-ccc);
 		border-left-color: var(--color-ccc);
 		box-shadow: inset 2px 2px 2px #111;
+	}
+
+	.actions a:visited, .action:visited, .action a:link, .action a:visited {
+		color: /*[[bCol]]*/;
+	}
+
+	.actions a:active, .current, a.current, a:link.current, .current a:visited {
+		color: /*[[bCol]]*/;
+		background: var(--bg-color);
+		border-color: var(--color-ddd);
+		box-shadow: inset 1px 1px 3px #000;
+	}
+
+	.actions label.disabled {
+		background: var(--color-ccc);
 	}
 
 }
