@@ -210,7 +210,7 @@
 	}
 
 	fieldset fieldset, fieldset dl dl, form blockquote.userstuff {
-		background: var(--color-fff);
+		background: var(--bg-color);
 	}
 
 	input, textarea {
@@ -251,6 +251,10 @@
 		color: #cecece;
 	}
 
+	.post .required .warnings, dd.required {
+		color: var(--text-color);
+	}
+
 	#modal {
 		background: var(--bg-color);
 		border-color: var(--color-eee);
@@ -262,6 +266,22 @@
 
 	#symbols-key dl {
 		border-color: var(--color-ddd);
+	}
+
+	div.dynamic {
+		background: var(--bg-color);
+	}
+
+	form.verbose legend, .verbose form legend {
+		background: var(--bg-color);
+		border-color: var(--color-ddd);
+		box-shadow: 1px 2px 3px #000;
+	}
+
+	.toggled form, .dynamic form {
+		border-color: var(--color-ccc);
+		background: var(--bg-color);
+		box-shadow: 1px 2px 5px #000;
 	}
 
 }
