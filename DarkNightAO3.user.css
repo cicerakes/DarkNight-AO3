@@ -513,6 +513,15 @@
 		background: var(--color-ccc);
 	}
 
+	form.search input[type="text"] {
+		border-top-color: var(--color-999);
+	}
+
+	.search [role="tooltip"] {
+		background: var(--color-ddd);
+		border: var(--bg-color);
+	}
+
 }
 
 @-moz-document domain("archiveofourown.org") {
