@@ -505,6 +505,14 @@
 		border-bottom-color: #bbb;
 	}
 
+	#tos_prompt {
+		background: var(--bg-color);
+	}
+	
+	#tos_prompt [disabled] {
+		background: var(--color-ccc);
+	}
+
 }
 
 @-moz-document domain("archiveofourown.org") {
