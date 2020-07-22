@@ -251,24 +251,18 @@
 		color: #cecece;
 	}
 
-	#modal-bg {
-		background: blue;
+	#modal {
+		background: var(--bg-color);
+		border-color: var(--color-eee);
 	}
 
-	#modal {
-		background: #fff;
-		border: 10px solid #eee;
-		margin: 3% 0;
-		max-width: 800px;
-		min-width: 200px;
-		padding-bottom: 44px;
-		position: relative;
-		text-align: left;
-		width: 80%;
-		z-index: 501;
-		box-shadow: 0 0 8px 0 rgba(0, 0, 0, .2)
+	#modal .content {
+		border-bottom-color: var(--color-ccc);
 	}
-	
+
+	#symbols-key dl {
+		border-color: var(--color-ddd);
+	}
 
 }
 
