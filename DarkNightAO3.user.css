@@ -44,7 +44,9 @@
 		--color-888: #8a8a8a;
 		--color-999: #7a7a7a;
 		--color-bbb: #5a5a5a;
+		--color-c2d2df: #2e5c84;
 		--color-ccc: #4a4a4a;
+		--color-d1e1ef: #1b374f;
 		--color-d1f0d1: #214121;
 		--color-ddd: #3a3a3a;
 		--color-eee: #2a2a2a;
@@ -542,6 +544,73 @@
 	.filters span.indicator {
 		filter: invert(89%) hue-rotate(180deg) saturate(2);
 	}
+
+	.nomination dt {
+		background: var(--bg-color);
+	}
+
+	.required, .error, .alert.flash {
+		color: #cecece;
+	}
+
+	.notice, .comment_notice, ul.notes, .caution, .error, .comment_error, .alert.flash {
+		background: var(--color-d1e1ef);
+		border-color: var(--color-c2d2df);
+		box-shadow: inset 1px 1px 2px;
+	}
+
+	.caution, .alert .userstuff {
+		background: #443900;
+		border-color: #726000;
+		color: #cecece;
+	}
+
+	.error, .comment_error, .alert.flash {
+		background: var(--color-efd1d1);
+		border-color: #712727;
+	}
+
+	form .notice, form ul.notes {
+		box-shadow: 0 0 3px var(--bg-color);
+	}
+	
+	.announcement .userstuff {
+		background: var(--color-d1e1ef);
+		border-color: var(--color-c2d2df);
+		color: #cecece;
+	}
+
+	.announcement input[type="submit"], .announcement .action {
+		background: var(--color-fff);
+		border-color: var(--color-bbb);
+	}
+
+	/*
+	.event .userstuff {
+		background: #700;
+		border-color: #600;
+		color: #fff;
+		background-image: -moz-linear-gradient(top, #700 0%, #a00 100%);
+		background-image: -webkit-linear-gradient(top, #700 0%, #a00 100%);
+		background-image: -o-linear-gradient(top, #700 0%, #a00 100%);
+		background-image: linear-gradient(to bottom, #700 0%, #a00 100%)
+	}
+	
+	.event .userstuff a {
+		color: #eee
+	}
+	*/
+
+	/* donations?
+	.announcement .thermometer .track {
+		background: #fff;
+		border: 1px solid #aaa;
+		height: 1.25em;
+		margin: 0 auto;
+		position: relative;
+		background-image: linear-gradient(to bottom, #fff 0%, #f3f3f3 50%, #ededed 51%, #fff 100%)
+	}
+	*/
 
 }
 
