@@ -1,5 +1,5 @@
 /* ==UserStyle==
-@name			Dark/Night Archive of Our Own beta
+@name			Dark/Night Archive of Our Own
 @namespace		cicerakes
 @version		2.0.0
 @description	A dark/night theme for archiveofourown.org.
@@ -24,10 +24,10 @@
 	"Left": ".blurb blockquote{text-align:left}"
 }
 @var select		cSb		"Custom Scrollbar" {
-	"Enabled": "::-webkit-scrollbar{background-color:/*[[sbBgCol]]*\/;width: 15px}::-webkit-scrollbar-thumb{background-color:/*[[sbBCol]]*\/}::-webkit-scrollbar-thumb:hover{background-color:/*[[sbBHCol]]*\/}textarea::-webkit-scrollbar:vertical{border-left:1px solid #3e3e3e}textarea::-webkit-scrollbar-thumb:vertical{border-left:1px solid #3e3e3e}textarea::-webkit-scrollbar:horizontal{border-top:1px solid #3e3e3e}textarea::-webkit-scrollbar-thumb:horizontal{border-top:1px solid #3e3e3e}::-webkit-scrollbar-corner{background-color:/*[[sbBgCol]]*\/}",
+	"Enabled": "::-webkit-scrollbar{background-color:/*[[sbBgCol]]*\/;width: 15px}::-webkit-scrollbar-thumb{background-color:/*[[sbBCol]]*\/}::-webkit-scrollbar-thumb:hover{background-color:/*[[sbBHCol]]*\/}textarea::-webkit-scrollbar:vertical{border-left:1px solid #5a5a5a}textarea::-webkit-scrollbar-thumb:vertical{border-left:1px solid #5a5a5a}textarea::-webkit-scrollbar:horizontal{border-top:1px solid #5a5a5a}textarea::-webkit-scrollbar-thumb:horizontal{border-top:1px solid #5a5a5a}::-webkit-scrollbar-corner{background-color:/*[[sbBgCol]]*\/}",
 	"Disabled": ""
 }
-@var color		sbBgCol	"Scrollbar Background Colour" #262626
+@var color		sbBgCol	"Scrollbar Background Colour" #222222
 @var color		sbBCol	"Scrollbar Bar Colour" rgba(86,86,86,0.4)
 @var color		sbBHCol	"Scrollbar Bar Hover Colour" rgba(102,102,102,0.4)
 ==/UserStyle== */
@@ -39,6 +39,7 @@
 		--link-color: /*[[lCol]]*/;
 		--text-color: /*[[fCol]]*/;
 		--button-text-color: /*[[bCol]]*/;
+		--button-hover-text-color: /*[[bHCol]]*/;
 		--red-link-color: /*[[tALCol]]*/;
 		--red-text-color: #aa1818;
 		--color-888: #8a8a8a;
@@ -52,8 +53,6 @@
 		--color-eee: #2a2a2a;
 		--color-efd1d1: #4b1a1a;
 		--color-fff: #1a1a1a;
-		--color-rgb-204: 74, 74, 74;
-		--color-rgb-221: 58, 58, 58;
 		--color-rgb-255: 26, 26, 26;
 	}
 
@@ -112,24 +111,24 @@
 	table {
 		background: var(--color-ddd);
 	}
-	
+
 	thead, tfoot {
 		border-bottom-color: var(--color-bbb);
 	}
-	
+
 	tfoot td {
 		border-top-color: var(--color-bbb);
 	}
-	
+
 	tbody tr {
 		border-bottom-color: var(--color-fff);
 	}
-	
+
 	thead td {
 		background: var(--color-ddd);
 		border-bottom-color: var(--color-fff);
 	}
-	
+
 	th, tr:hover, col.name {
 		background: var(--color-fff);
 		border-color: var(--color-bbb);
@@ -151,24 +150,15 @@
 		background: var(--color-ccc);
 	}
 
-	/* Logo
-	#header .heading a {
-		color: #C53131;
-	}*/
-
 	#header .menu, #small_login, #header .dropdown:hover .current+.menu {
 		background: var(--color-ddd);
 		box-shadow: 1px 1px 3px -1px #000;
-		background-image: -moz-linear-gradient(top, rgba(var(--color-rgb-221), .98) 0%, rgba(var(--color-rgb-204), .98) 100%);
-		background-image: -webkit-linear-gradient(top, rgba(var(--color-rgb-221), .98) 0%, rgba(var(--color-rgb-204), .98) 100%);
-		background-image: -o-linear-gradient(top, rgba(var(--color-rgb-221), .98) 0%, rgba(var(--color-rgb-204), .98) 100%);
-		background-image: linear-gradient(to bottom, rgba(var(--color-rgb-221), .98) 0%, rgba(var(--color-rgb-204), 0.98) 100%);
 	}
 
 	#header .menu li {
 		border-bottom-color: var(--color-888);
 	}
-	
+
 	#header .dropdown .menu a:hover, #header .dropdown .menu a:focus {
 		background: rgba(26, 26, 26, .25);
 	}
@@ -176,11 +166,11 @@
 	#header .menu .current {
 		color: var(--link-color);
 	}
-	
+
 	#header .user a:hover, #header .user a:focus, #header .user .current {
 		color: #DD1919;
 	}
-	
+
 	#login .open a:hover, #login .open a:focus {
 		background: var(--color-eee);
 	}
@@ -215,13 +205,13 @@
 
 	#dashboard a:hover {
 		background: var(--color-ddd);
-		color: var(--red-link-color);
+		color: var(--button-hover-text-color);
 	}
-	
+
 	#dashboard ul {
 		border-top-color: var(--color-ddd);
 	}
-	
+
 	#dashboard .current {
 		background: var(--color-ccc);
 	}
@@ -263,11 +253,11 @@
 	form dt {
 		border-bottom-color: var(--color-eee);
 	}
-	
+
 	form dd.required {
 		color: var(--text-color);
 	}
-	
+
 	.LV_invalid {
 		background: var(--color-efd1d1);
 		border-color: #900;
@@ -280,11 +270,15 @@
 		border-color: var(--color-eee);
 		color: var(--text-color);
 	}
-	
+
 	.autocomplete .dropdown ul li:hover, li.selected {
 		background: #900;
 	}
-	
+
+	.dropdown {
+		background: none;
+	}
+
 	.required .autocomplete, .autocomplete .notice {
 		color: #cecece;
 	}
@@ -334,7 +328,7 @@
 	}
 
 	.actions a:hover, .actions input:hover, .actions a:focus, .actions input:focus, label.action:hover, .action:hover, .action:focus {
-		color: /*[[bHCol]]*/;
+		color: var(--button-hover-text-color);
 		border-top-color: var(--color-ccc);
 		border-left-color: var(--color-ccc);
 		box-shadow: inset 2px 2px 2px #111;
@@ -355,10 +349,15 @@
 		background: var(--color-ccc);
 	}
 
+	.secondary {
+		border: 2px solid var(--color-bbb);
+		box-shadow: 2px 2px 5px #000;
+	}
+
 	.own, .draft, .draft .wrapper, .unread, .child, .unwrangled, .unreviewed {
 		background: var(--color-eee);
 	}
-	
+
 	.draft {
 		border-color: var(--color-aaa);
 	}
@@ -369,7 +368,7 @@
 		border-color: var(--color-bbb);
 		border-bottom-color: var(--color-aaa);
 	}
-	
+
 	.actions span.defaulted {
 		color: #cecece;
 	}
@@ -381,13 +380,14 @@
 	.nominations .approved {
 		background: var(--color-d1f0d1);
 	}
-	
+
 	.nominations .rejected {
 		background: var(--color-efd1d1);
 	}
 
 	a.tag {
 		color: #cecece;
+		line-height: 1.6;
 	}
 
 	.wrapper {
@@ -419,7 +419,7 @@
 	.listbox>.heading, .listbox .heading a:visited {
 		color: #cecece;
 	}
-	
+
 	.listbox .index {
 		background: var(--bg-color);
 		box-shadow: inset 1px 1px 3px #000;
@@ -514,7 +514,7 @@
 	.splash .news li {
 		border-bottom-color: var(--color-eee);
 	}
-	
+
 	.faq .categories h3 {
 		border-bottom-color: #bbb;
 	}
@@ -522,9 +522,13 @@
 	#tos_prompt {
 		background: var(--bg-color);
 	}
-	
+
 	#tos_prompt [disabled] {
 		background: var(--color-ccc);
+	}
+
+	.home .header h2 {
+		border-bottom: none;
 	}
 
 	form.search input[type="text"] {
@@ -557,6 +561,14 @@
 		background: var(--bg-color);
 	}
 
+	.userstuff h2 {
+		color: #aaa;
+	}
+
+	.userstuff h3 {
+		border-bottom-color: #aaa;
+	}
+
 	.required, .error, .alert.flash {
 		color: #cecece;
 	}
@@ -564,7 +576,7 @@
 	.notice, .comment_notice, ul.notes, .caution, .error, .comment_error, .alert.flash {
 		background: var(--color-d1e1ef);
 		border-color: var(--color-c2d2df);
-		box-shadow: inset 1px 1px 2px;
+		box-shadow: inset 1px 1px 2px #111;
 	}
 
 	.caution, .alert .userstuff {
@@ -576,12 +588,13 @@
 	.error, .comment_error, .alert.flash {
 		background: var(--color-efd1d1);
 		border-color: #712727;
+		box-shadow: 1px 1px 2px #712727;
 	}
 
 	form .notice, form ul.notes {
 		box-shadow: 0 0 3px var(--bg-color);
 	}
-	
+
 	.announcement .userstuff {
 		background: var(--color-d1e1ef);
 		border-color: var(--color-c2d2df);
@@ -592,34 +605,6 @@
 		background: var(--color-fff);
 		border-color: var(--color-bbb);
 	}
-
-	/*
-	.event .userstuff {
-		background: #700;
-		border-color: #600;
-		color: #fff;
-		background-image: -moz-linear-gradient(top, #700 0%, #a00 100%);
-		background-image: -webkit-linear-gradient(top, #700 0%, #a00 100%);
-		background-image: -o-linear-gradient(top, #700 0%, #a00 100%);
-		background-image: linear-gradient(to bottom, #700 0%, #a00 100%)
-	}
-	
-	.event .userstuff a {
-		color: #eee
-	}
-	*/
-
-	/* donations?
-	.announcement .thermometer .track {
-		background: #fff;
-		border: 1px solid #aaa;
-		height: 1.25em;
-		margin: 0 auto;
-		position: relative;
-		background-image: linear-gradient(to bottom, #fff 0%, #f3f3f3 50%, #ededed 51%, #fff 100%)
-	}
-	*/
-
 }
 
 @-moz-document domain("archiveofourown.org") {
