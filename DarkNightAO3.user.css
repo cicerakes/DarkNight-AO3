@@ -42,6 +42,8 @@
 		--color-ddd: #3a3a3a;
 		--color-eee: #2a2a2a;
 		--color-fff: #1a1a1a;
+		--color-rgb-204: 74, 74, 74;
+		--color-rgb-221: 58, 58, 58;
 	}
 
 	body, .toggled form, .dynamic form, .secondary, .dropdown {
@@ -133,10 +135,10 @@
 	#header .menu, #small_login, #header .dropdown:hover .current+.menu {
 		background: var(--color-ddd);
 		box-shadow: 1px 1px 3px -1px #000;
-		background-image: -moz-linear-gradient(top, rgba(58, 58, 58, .98) 0%, rgba(74, 74, 74, .98) 100%);
-		background-image: -webkit-linear-gradient(top, rgba(58, 58, 58, .98) 0%, rgba(74, 74, 74, .98) 100%);
-		background-image: -o-linear-gradient(top, rgba(58, 58, 58, .98) 0%, rgba(74, 74, 74, .98) 100%);
-		background-image: linear-gradient(to bottom, rgba(58, 58, 58, .98) 0%, rgba(74, 74, 74, 0.98) 100%);
+		background-image: -moz-linear-gradient(top, rgba(var(--color-rgb-221), .98) 0%, rgba(var(--color-rgb-204), .98) 100%);
+		background-image: -webkit-linear-gradient(top, rgba(var(--color-rgb-221), .98) 0%, rgba(var(--color-rgb-204), .98) 100%);
+		background-image: -o-linear-gradient(top, rgba(var(--color-rgb-221), .98) 0%, rgba(var(--color-rgb-204), .98) 100%);
+		background-image: linear-gradient(to bottom, rgba(var(--color-rgb-221), .98) 0%, rgba(var(--color-rgb-204), 0.98) 100%);
 	}
 
 	#header .menu li {
@@ -166,6 +168,10 @@
 
 	#small_login {
 		border-color: var(--color-fff);
+	}
+
+	#header .primary {
+		background: #900;
 	}
 
 }
