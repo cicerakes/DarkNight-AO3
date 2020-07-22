@@ -193,6 +193,14 @@
 		border-color: var(--color-fff);
 	}
 
+	#small_login .actions input[type="checkbox"] {
+		box-shadow: none;
+	}
+
+	.dropdown #small_login .footnote a {
+		background: transparent;
+	}
+
 	#header .primary .menu a, #header .primary .menu .current {
 		color:  var(--link-color);
 	}
