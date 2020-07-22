@@ -36,6 +36,7 @@
 		--bg-color: /*[[bgCol]]*/;
 		--link-color: /*[[lCol]]*/;
 		--text-color: /*[[fCol]]*/;
+		--red-link-color: /*[[tALCol]]*/;
 		--color-888: #8a8a8a;
 		--color-bbb: #5a5a5a;
 		--color-ccc: #4a4a4a;
@@ -172,6 +173,31 @@
 
 	#header .primary {
 		background: #900;
+	}
+
+	#header .primary .menu a, #header .primary .menu .current {
+		color:  var(--link-color);
+	}
+
+	#header .search, #header #search input:focus {
+		color: var(--text-color);
+	}
+
+	#dashboard a, #dashboard span {
+		color: var(--link-color);
+	}
+
+	#dashboard a:hover {
+		background: var(--color-ddd);
+		color: var(--red-link-color);
+	}
+	
+	#dashboard ul {
+		border-top-color: var(--color-ddd);
+	}
+	
+	#dashboard .current {
+		background: var(--color-ccc);
 	}
 
 }
