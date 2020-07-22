@@ -414,6 +414,8 @@
 		color: var(--red-link-color);
 	}
 
+	/*[[sTA]]*/
+
 	.required-tags .rating-notrated, .required-tags .category-none, .required-tags .warning-no {
 		filter: invert(89%);
 	}
@@ -428,6 +430,30 @@
 
 	.status .private .text {
 		filter: invert(89%);
+	}
+
+	.picture .header {
+		border-bottom-color: var(--color-ccc);
+	}
+
+	.item dl.visibility {
+		background: var(--color-eee);
+	}
+
+	.bookmark .user {
+		border-color: var(--color-ccc);
+	}
+
+	.bookmark > .user.module.group > .heading, .bookmark .user .userstuff {
+		padding-left: 10px;
+	}
+
+	.bookmark .user .datetime, .bookmark .work .datetime {
+		margin: .5em;
+	}
+
+	.reading h4.viewed {
+		background: var(--color-ddd);
 	}
 
 }
