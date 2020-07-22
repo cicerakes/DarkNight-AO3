@@ -13,9 +13,10 @@
 @var text		tFont	"Font" "Lucida Sans Unicode"
 @var color		fCol	"Font Colour" #CECECE
 @var color		bgCol	"Background Colour" #1A1A1A
-@var color		lCol	"Link/Button Colour" #CECECE
-@var color		bHCol	"Button Hover Colour" #DD1919
+@var color		lCol	"Link Colour" #CECECE
 @var color		lHCol	"Link Hover Colour" #444444
+@var color		bCol	"Button Text Colour" #CECECE
+@var color		bHCol	"Button Hover Text Colour" #DD1919
 @var color		vLCol	"Visited Link Colour" #777777
 @var color		tALCol	"Title/Author(s) Link Colour" #C53131
 @var select		sTA		"Summary Text Alignment" {
@@ -282,6 +283,25 @@
 		border-color: var(--color-ccc);
 		background: var(--bg-color);
 		box-shadow: 1px 2px 5px #000;
+	}
+
+	.actions a, .actions a:link, .action, .action:link, .actions input, input[type="submit"], button, .current, .actions label {
+		background: var(--color-eee);
+		color: /*[[bCol]]*/;
+		border-color: var(--color-bbb);
+		border-bottom-color: none;
+		background-image: -moz-linear-gradient(var(--color-ccc) 2%, var(--color-eee) 95%, var(--color-fff) 100%);
+		background-image: -webkit-linear-gradient(var(--color-ccc) 2%, var(--color-eee) 95%, var(--color-fff) 100%);
+		background-image: -o-linear-gradient(var(--color-ccc) 2%, var(--color-eee) 95%, var(--color-fff) 100%);
+		background-image: -ms-linear-gradient(var(--color-ccc) 2%, var(--color-eee) 95%, var(--color-fff) 100%);
+		background-image: linear-gradient(var(--color-ccc) 2%, var(--color-eee) 95%, var(--color-fff) 100%);
+	}
+
+	.actions a:hover, .actions input:hover, .actions a:focus, .actions input:focus, label.action:hover, .action:hover, .action:focus {
+		color: /*[[bHCol]]*/;
+		border-top-color: var(--color-ccc);
+		border-left-color: var(--color-ccc);
+		box-shadow: inset 2px 2px 2px #111;
 	}
 
 }
