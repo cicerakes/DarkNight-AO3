@@ -10,11 +10,9 @@ Includes options to change font and colours.
 Also includes support for [kudosed and seen history](https://greasyfork.org/en/scripts/5835-ao3-kudosed-and-seen-history) and [kudos/hits ratio](https://greasyfork.org/en/scripts/3144-ao3-kudos-hits-ratio) userscripts.
 
 ## Installation
-Install the [Stylus extension](https://add0n.com/stylus.html) to install the UserCSS below.
 
+* Install the [Stylus extension](https://add0n.com/stylus.html).
 * [Install the UserCSS here.](https://raw.githubusercontent.com/cicerakes/DarkNight-AO3/master/DarkNightAO3.user.css)
-* A Userstyle version can also be found [here](https://userstyles.org/styles/97658/dark-night-archive-of-our-own).  
-Note that this version is outdated and not as frequently updated.
 
 ## Preview
 

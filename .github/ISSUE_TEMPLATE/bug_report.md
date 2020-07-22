@@ -8,7 +8,7 @@ assignees: cicerakes
 ---
 
 - **Browser:** 
-- **Link to page where the issue occurs:** 
+- **Link to / description of page where the issue occurs:** 
 
 **Describe the problem**
 A clear and concise description of what the bug is and/or provide steps to reproduce the issue.
