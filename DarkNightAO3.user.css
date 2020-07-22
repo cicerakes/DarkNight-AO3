@@ -453,8 +453,26 @@
 	}
 
 	.reading h4.viewed {
+		background: var(--bg-color);
+	}
+
+	div.comment, li.comment {
+		border-color: var(--color-ddd);
+	}
+
+	.comment div.icon {
+		border-bottom-color: var(--color-ddd);
+	}
+
+	.comment h4.byline {
 		background: var(--color-ddd);
 	}
+
+	.thread .even {
+		background: var(--color-eee);
+	}
+
+	
 
 }
 
