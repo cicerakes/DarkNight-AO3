@@ -526,6 +526,23 @@
 		border: var(--bg-color);
 	}
 
+	.filters .expander {
+		color: #cecece;
+		background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMTCtCgrAAAAAOElEQVQoU2OgGPT19f2HMokD586d+0+SJpAGkjTBNBCtCVkDUZoo0kCSk0jyNNGKQYAkxYQBAwMAMBpez8qRxMUAAAAASUVORK5CYII=");
+	}
+
+	.filters .expanded .expander {
+		background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuOWwzfk4AAAA0SURBVChTYxikoK+v7/+5c+fwYpAaqHIIwKcJQzEMYNOEUzEMIGsiqBgGQAqJVjzkAAMDAP7MXs9/r5qvAAAAAElFTkSuQmCC");
+	}
+
+	.filters .group dt.bookmarker {
+		border-top-color: var(--color-eee);
+	}
+
+	.filters span.indicator {
+		filter: invert(89%) hue-rotate(180deg) saturate(2);
+	}
+
 }
 
 @-moz-document domain("archiveofourown.org") {
