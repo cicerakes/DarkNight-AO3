@@ -231,12 +231,19 @@
 	}
 
 	input, textarea {
+		background-color: var(--color-fff);
+		color: var(--text-color);
 		border-color: var(--color-bbb);
 		box-shadow: inset 0 1px 2px #000;
 	}
 
 	input:focus, select:focus, textarea:focus {
 		background: var(--color-eee);
+	}
+
+	select {
+		background-color: var(--color-fff);
+		color: var(--text-color);
 	}
 
 	form dt {
@@ -471,6 +478,8 @@
 	.thread .even {
 		background: var(--color-eee);
 	}
+
+	
 
 	
 
