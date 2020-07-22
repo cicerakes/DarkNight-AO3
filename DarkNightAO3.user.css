@@ -38,10 +38,12 @@
 		--link-color: /*[[lCol]]*/;
 		--text-color: /*[[fCol]]*/;
 		--red-link-color: /*[[tALCol]]*/;
+		--red-text-color: #aa1818;
 		--color-888: #8a8a8a;
 		--color-999: #7a7a7a;
 		--color-bbb: #5a5a5a;
 		--color-ccc: #4a4a4a;
+		--color-d1f0d1: #214121;
 		--color-ddd: #3a3a3a;
 		--color-eee: #2a2a2a;
 		--color-efd1d1: #4b1a1a;
@@ -315,6 +317,37 @@
 
 	.actions label.disabled {
 		background: var(--color-ccc);
+	}
+
+	.own, .draft, .draft .wrapper, .unread, .child, .unwrangled, .unreviewed {
+		background: var(--color-eee);
+	}
+	
+	.draft {
+		border-color: var(--color-aaa);
+	}
+
+	span.unread, .replied, span.claimed, .actions span.defaulted {
+		background: var(--color-ccc);
+		color: #900;
+		border-color: var(--color-bbb);
+		border-bottom-color: var(--color-aaa);
+	}
+	
+	.actions span.defaulted {
+		color: #cecece;
+	}
+
+	.draggable, .droppable, span.requested, .nominations .rejected {
+		color: var(--red-text-color);
+	}
+
+	.nominations .approved {
+		background: var(--color-d1f0d1);
+	}
+	
+	.nominations .rejected {
+		background: var(--color-efd1d1);
 	}
 
 }
