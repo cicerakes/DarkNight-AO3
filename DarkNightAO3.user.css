@@ -479,13 +479,32 @@
 		background: var(--color-eee);
 	}
 
-	
+	.splash .module h3 {
+		border-bottom-color: #454545;
+		color: var(--red-text-color);
+	}
 
+	.splash .browse li a:before {
+		color: var(--red-text-color);
+	}
+
+	.splash .favorite li:nth-of-type(odd) a {
+		background: var(--color-eee);
+	}
+
+	.splash .module div.account {
+		background: #262626;
+		border-color: var(--color-ccc);
+	}
+
+	.splash .news li {
+		border-bottom-color: var(--color-eee);
+	}
 	
 
 }
 
-	@-moz-document domain("archiveofourown.org") {
+@-moz-document domain("archiveofourown.org") {
 	.kudoshits[style="background-color: rgb(253, 242, 163);"] {
 		background-color: #4C4408 !important;
 		color: #cecece;
