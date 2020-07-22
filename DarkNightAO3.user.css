@@ -501,6 +501,9 @@
 		border-bottom-color: var(--color-eee);
 	}
 	
+	.faq .categories h3 {
+		border-bottom-color: #bbb;
+	}
 
 }
 
