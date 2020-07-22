@@ -171,10 +171,6 @@
 		border-color: var(--color-fff);
 	}
 
-	#header .primary {
-		background: #900;
-	}
-
 	#header .primary .menu a, #header .primary .menu .current {
 		color:  var(--link-color);
 	}
@@ -198,6 +194,10 @@
 	
 	#dashboard .current {
 		background: var(--color-ccc);
+	}
+
+	#footer {
+		border-top-color: var(--bg-color);
 	}
 
 }
