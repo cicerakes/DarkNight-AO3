@@ -350,6 +350,10 @@
 		background: var(--color-efd1d1);
 	}
 
+	a.tag {
+		color: #cecece;
+	}
+
 }
 
 	@-moz-document domain("archiveofourown.org"){
