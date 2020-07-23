@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name			Dark/Night Archive of Our Own
 @namespace		cicerakes
-@version		2.0.0
+@version		2.0.1
 @description	A dark/night theme for archiveofourown.org.
 @author			cicerakes
 @license		CC-BY-SA-4.0
@@ -650,5 +650,11 @@
 	#importexport-box {
 		background-color: var(--bg-color);
 		border-color: #2e2e2e;
+	}
+}
+
+@media only screen and (max-width: 42em), handheld {
+	#outer {
+		background: var(--bg-color);
 	}
 }
