@@ -15,6 +15,10 @@
 	"Yes": ", .comment .userstuff",
 	"No": ""
 }
+@var select		fSum	"Apply Font & Font Size settings to summaries" {
+	"Yes": ", .userstuff.summary, .news .userstuff",
+	"No": ""
+}
 @var color		fCol	"Font Colour" #CECECE
 @var color		bgCol	"Background Colour" #1A1A1A
 @var color		lCol	"Link Colour" #CECECE
@@ -98,7 +102,7 @@
 		border-color: var(--color-ddd);
 	}
 
-	.userstuff.summary, .preface.group, #chapters, .news .userstuff/*[[fCom]]*/ {
+	.preface.group, #chapters/*[[fSum]]*//*[[fCom]]*/ {
 		font-family: '/*[[tFont]]*/', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif;
 		font-size: /*[[fSize]]*/;
 	}
