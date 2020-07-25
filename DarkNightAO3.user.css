@@ -658,4 +658,12 @@
 	#outer {
 		background: var(--bg-color);
 	}
+
+	#header .dropdown a:focus, #header .dropdown .menu a:focus {
+		color: #DD1919;
+	}
+
+	#header .primary .dropdown a:focus {
+		color: var(--link-color);
+	}
 }
