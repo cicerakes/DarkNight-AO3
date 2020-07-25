@@ -177,6 +177,7 @@
 
 	#small_login {
 		border-color: var(--color-fff);
+		box-shadow: none;
 	}
 
 	#small_login .actions input[type="checkbox"] {
