@@ -34,7 +34,6 @@
 
 @-moz-document domain("archiveofourown.org") {
 	:root {
-		--font-size: /*[[fSize]]*/;
 		--bg-color: /*[[bgCol]]*/;
 		--link-color: /*[[lCol]]*/;
 		--text-color: /*[[fCol]]*/;
@@ -101,6 +100,9 @@
 
 	.userstuff {
 		font-family: '/*[[tFont]]*/', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif;
+	}
+
+	.userstuff.summary, .preface.group, #chapters {
 		font-size: /*[[fSize]]*/;
 	}
 
