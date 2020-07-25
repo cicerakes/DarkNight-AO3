@@ -11,6 +11,10 @@
 @preprocessor	uso
 @var text		fSize	"Font Size (Can be %, px, etc.)" 100%
 @var text		tFont	"Font" "Lucida Sans Unicode"
+@var select		fCom	"Apply Font & Font Size settings to comments" {
+	"Yes": ", .comment .userstuff",
+	"No": ""
+}
 @var color		fCol	"Font Colour" #CECECE
 @var color		bgCol	"Background Colour" #1A1A1A
 @var color		lCol	"Link Colour" #CECECE
@@ -94,15 +98,8 @@
 		border-color: var(--color-ddd);
 	}
 
-	blockquote, pre {
+	.userstuff.summary, .preface.group, #chapters/*[[fCom]]*/ {
 		font-family: '/*[[tFont]]*/', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif;
-	}
-
-	.userstuff {
-		font-family: '/*[[tFont]]*/', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif;
-	}
-
-	.userstuff.summary, .preface.group, #chapters {
 		font-size: /*[[fSize]]*/;
 	}
 
