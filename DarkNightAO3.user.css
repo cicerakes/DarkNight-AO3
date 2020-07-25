@@ -98,7 +98,7 @@
 		border-color: var(--color-ddd);
 	}
 
-	.userstuff.summary, .preface.group, #chapters/*[[fCom]]*/ {
+	.userstuff.summary, .preface.group, #chapters, .news .userstuff/*[[fCom]]*/ {
 		font-family: '/*[[tFont]]*/', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif;
 		font-size: /*[[fSize]]*/;
 	}
