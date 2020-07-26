@@ -102,8 +102,16 @@
 		border-color: var(--color-ddd);
 	}
 
-	.preface.group, #chapters/*[[fSum]]*//*[[fCom]]*/ {
+	#chapters .userstuff.module/*[[fSum]]*//*[[fCom]]*/ {
 		font-family: '/*[[tFont]]*/', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif;
+		font-size: /*[[fSize]]*/;
+	}
+
+	.preface.group .summary.module .userstuff, #notes .userstuff {
+		font-family: '/*[[tFont]]*/', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif;
+	}
+
+	.preface.group .summary.module .userstuff, #notes .userstuff, .summary.module .heading, .chapter.preface.group .title, #notes .heading {
 		font-size: /*[[fSize]]*/;
 	}
 
@@ -192,7 +200,7 @@
 	}
 
 	#header .primary .menu a, #header .primary .menu .current {
-		color:  var(--link-color);
+		color: var(--link-color);
 	}
 
 	#header .search, #header #search input:focus {
