@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name			Dark/Night Archive of Our Own
 @namespace		cicerakes
-@version		2.1.0
+@version		2.2.0
 @description	A dark/night theme for archiveofourown.org.
 @author			cicerakes
 @license		CC-BY-SA-4.0
@@ -27,6 +27,7 @@
 @var color		bHCol	"Button Hover Text Colour" #DD1919
 @var color		vLCol	"Visited Link Colour" #777777
 @var color		tALCol	"Title/Author(s) Link Colour" #C53131
+@var number		wWidth	"Work Width (%)" [100, 1, 100, 1, "%"]
 @var select		sTA		"Summary Text Alignment" {
 	"Justify (AO3 default)": "",
 	"Left": ".blurb blockquote{text-align:left}"
@@ -114,6 +115,11 @@
 
 	.preface.group .summary.module .userstuff, .notes .userstuff, .summary.module .heading, .chapter.preface.group .title, .notes .heading {
 		font-size: var(--font-size);
+	}
+
+	#chapters .userstuff.module {
+		width: /*[[wWidth]]*/;
+		margin: auto;
 	}
 
 	table {
