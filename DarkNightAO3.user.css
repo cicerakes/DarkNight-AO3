@@ -108,11 +108,11 @@
 		font-size: var(--font-size);
 	}
 
-	.preface.group .summary.module .userstuff, #notes .userstuff {
+	.preface.group .summary.module .userstuff, .notes .userstuff {
 		font-family: '/*[[tFont]]*/', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif;
 	}
 
-	.preface.group .summary.module .userstuff, #notes .userstuff, .summary.module .heading, .chapter.preface.group .title, #notes .heading {
+	.preface.group .summary.module .userstuff, .notes .userstuff, .summary.module .heading, .chapter.preface.group .title, .notes .heading {
 		font-size: var(--font-size);
 	}
 
