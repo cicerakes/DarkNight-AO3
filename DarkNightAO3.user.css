@@ -43,6 +43,7 @@
 @-moz-document domain("archiveofourown.org") {
 	:root {
 		--bg-color: /*[[bgCol]]*/;
+		--font-size: /*[[fSize]]*/;
 		--link-color: /*[[lCol]]*/;
 		--text-color: /*[[fCol]]*/;
 		--button-text-color: /*[[bCol]]*/;
@@ -104,7 +105,7 @@
 
 	#chapters .userstuff.module/*[[fSum]]*//*[[fCom]]*/ {
 		font-family: '/*[[tFont]]*/', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif;
-		font-size: /*[[fSize]]*/;
+		font-size: var(--font-size);
 	}
 
 	.preface.group .summary.module .userstuff, #notes .userstuff {
@@ -112,7 +113,7 @@
 	}
 
 	.preface.group .summary.module .userstuff, #notes .userstuff, .summary.module .heading, .chapter.preface.group .title, #notes .heading {
-		font-size: /*[[fSize]]*/;
+		font-size: var(--font-size);
 	}
 
 	table {
@@ -662,6 +663,11 @@
 	#importexport-box {
 		background-color: var(--bg-color);
 		border-color: #2e2e2e;
+	}
+
+	.chapter div[style="font-size: 1em; color: inherit; text-align: center; margin: 2em 0 .6em;"] {
+		font-family: '/*[[tFont]]*/', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif;
+		font-size: var(--font-size) !important;
 	}
 }
 
