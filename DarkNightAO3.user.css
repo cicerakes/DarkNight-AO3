@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name			Dark/Night Archive of Our Own
 @namespace		cicerakes
-@version		2.2.0
+@version		2.2.1
 @description	A dark/night theme for archiveofourown.org.
 @author			cicerakes
 @license		CC-BY-SA-4.0
@@ -109,7 +109,7 @@
 		font-size: var(--font-size);
 	}
 
-	.preface.group .summary.module .userstuff, .notes .userstuff {
+	.preface.group .summary.module .userstuff, .notes .userstuff, #chapters .userstuff blockquote {
 		font-family: '/*[[tFont]]*/', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif;
 	}
 
