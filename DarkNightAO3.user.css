@@ -104,7 +104,7 @@
 		border-color: var(--color-ddd);
 	}
 
-	#chapters .userstuff.module/*[[fSum]]*//*[[fCom]]*/ {
+	#chapters .userstuff/*[[fSum]]*//*[[fCom]]*/ {
 		font-family: '/*[[tFont]]*/', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif;
 		font-size: var(--font-size);
 	}
@@ -117,7 +117,7 @@
 		font-size: var(--font-size);
 	}
 
-	#chapters .userstuff.module {
+	#chapters .userstuff {
 		width: /*[[wWidth]]*/;
 		margin: auto;
 	}
