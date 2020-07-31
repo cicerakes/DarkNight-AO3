@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name			Dark/Night Archive of Our Own
 @namespace		cicerakes
-@version		2.2.1
+@version		2.2.2
 @description	A dark/night theme for archiveofourown.org.
 @author			cicerakes
 @license		CC-BY-SA-4.0
@@ -162,6 +162,10 @@
 
 	#header .current {
 		background: var(--color-ccc);
+	}
+
+	#header .heading a {
+		color: #900;
 	}
 
 	#header .menu, #small_login, #header .dropdown:hover .current+.menu {
