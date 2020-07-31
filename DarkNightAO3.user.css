@@ -689,4 +689,9 @@
 	#header .primary .dropdown a:focus {
 		color: var(--link-color);
 	}
+
+	#dashboard .secondary {
+		background: var(--color-eee);
+		box-shadow: inset 2px 2px 5px #000;
+	}
 }
