@@ -218,6 +218,10 @@
 		color: var(--text-color);
 	}
 
+	#header h2 {
+		border-top-color: var(--bg-color);
+	}
+
 	#dashboard a, #dashboard span {
 		color: var(--link-color);
 	}
