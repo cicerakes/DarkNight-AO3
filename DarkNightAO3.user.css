@@ -698,4 +698,8 @@
 		background: var(--color-eee);
 		box-shadow: inset 2px 2px 5px #000;
 	}
+
+	.javascript {
+		background: var(--color-ddd);
+	}
 }
