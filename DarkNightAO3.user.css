@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name			Dark/Night Archive of Our Own
 @namespace		cicerakes
-@version		2.2.2
+@version		2.2.3
 @description	A dark/night theme for archiveofourown.org.
 @author			cicerakes
 @license		CC-BY-SA-4.0
@@ -631,6 +631,10 @@
 
 	#stat_chart {
 		filter: invert(90%) hue-rotate(180deg) saturate(4);
+	}
+
+	.icon img[src="/images/skins/iconsets/default/icon_user.png"], .comment .icon .visitor {
+		filter: invert(90%);
 	}
 }
 
