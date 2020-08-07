@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name			Dark/Night Archive of Our Own
 @namespace		cicerakes
-@version		2.2.3
+@version		2.2.4
 @description	A dark/night theme for archiveofourown.org.
 @author			cicerakes
 @license		CC-BY-SA-4.0
@@ -632,9 +632,9 @@
 	.icon img[src="/images/skins/iconsets/default/icon_user.png"], .comment .icon .visitor {
 		filter: invert(90%);
 	}
-}
 
-@-moz-document domain("archiveofourown.org") {
+	/* Userscripts */
+
 	.kudoshits[style="background-color: rgb(253, 242, 163);"] {
 		background-color: #4C4408 !important;
 		color: #cecece;
