@@ -298,10 +298,6 @@
 		background: #900;
 	}
 
-	.dropdown {
-		background: none;
-	}
-
 	.required .autocomplete, .autocomplete .notice {
 		color: #cecece;
 	}
