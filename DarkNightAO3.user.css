@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name			Dark/Night Archive of Our Own
 @namespace		cicerakes
-@version		2.2.4
+@version		2.2.5
 @description	A dark/night theme for archiveofourown.org.
 @author			cicerakes
 @license		CC-BY-SA-4.0
@@ -683,27 +683,27 @@
 		font-family: '/*[[tFont]]*/', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif;
 		font-size: var(--font-size) !important;
 	}
-}
 
-@media only screen and (max-width: 42em), handheld {
-	#outer {
-		background: var(--bg-color);
-	}
+	@media only screen and (max-width: 42em), handheld {
+		#outer {
+			background: var(--bg-color);
+		}
 
-	#header .dropdown a:focus, #header .dropdown .menu a:focus, #header .user .open a:focus {
-		color: #DD1919;
-	}
+		#header .dropdown a:focus, #header .dropdown .menu a:focus, #header .user .open a:focus {
+			color: #DD1919;
+		}
 
-	#header .primary .dropdown a:focus {
-		color: var(--link-color);
-	}
+		#header .primary .dropdown a:focus {
+			color: var(--link-color);
+		}
 
-	#dashboard .secondary {
-		background: var(--color-eee);
-		box-shadow: inset 2px 2px 5px #000;
-	}
+		#dashboard .secondary {
+			background: var(--color-eee);
+			box-shadow: inset 2px 2px 5px #000;
+		}
 
-	.javascript {
-		background: var(--color-ddd);
+		.javascript {
+			background: var(--color-ddd);
+		}
 	}
 }
