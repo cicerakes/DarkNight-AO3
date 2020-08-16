@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name			Dark/Night Archive of Our Own
 @namespace		cicerakes
-@version		2.2.5
+@version		2.2.6
 @description	A dark/night theme for archiveofourown.org.
 @author			cicerakes
 @license		CC-BY-SA-4.0
@@ -16,7 +16,7 @@
 	"No": ""
 }
 @var select		fSum	"Apply Font & Font Size settings to summaries" {
-	"Yes": ", .userstuff.summary, .news .userstuff",
+	"Yes": ".userstuff.summary blockquote{font-family: '/*[[tFont]]*\/', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif;} .userstuff.summary, .news .userstuff, ",
 	"No": ""
 }
 @var color		fCol	"Font Colour" #CECECE
@@ -104,12 +104,12 @@
 		border-color: var(--color-ddd);
 	}
 
-	#chapters .userstuff/*[[fSum]]*//*[[fCom]]*/ {
+	/*[[fSum]]*/#chapters .userstuff/*[[fCom]]*/ {
 		font-family: '/*[[tFont]]*/', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif;
 		font-size: var(--font-size);
 	}
 
-	.preface.group .summary.module .userstuff, .notes .userstuff, #chapters .userstuff blockquote {
+	.preface.group .summary.module .userstuff, .notes .userstuff, #chapters .userstuff blockquote, .preface .userstuff blockquote {
 		font-family: '/*[[tFont]]*/', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif;
 	}
 
