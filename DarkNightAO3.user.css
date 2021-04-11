@@ -370,6 +370,10 @@
 		background: var(--color-ccc);
 	}
 
+	.delete a, span.delete {
+		color: #900;
+	}
+
 	.secondary {
 		border: 2px solid var(--color-bbb);
 		box-shadow: 2px 2px 5px #000;
