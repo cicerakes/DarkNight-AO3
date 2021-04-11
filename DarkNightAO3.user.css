@@ -251,6 +251,7 @@
 	}
 
 	fieldset dl, fieldset.actions, fieldset dl fieldset dl {
+		background: transparent;
 		box-shadow: none;
 	}
 
