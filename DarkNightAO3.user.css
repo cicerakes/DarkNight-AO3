@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name			Dark/Night Archive of Our Own
 @namespace		cicerakes
-@version		2.2.8
+@version		2.2.9
 @description	A dark/night theme for archiveofourown.org.
 @author			cicerakes
 @license		CC-BY-SA-4.0
@@ -610,7 +610,7 @@
 		color: #cecece;
 	}
 
-	.error, .comment_error, .alert.flash {
+	.error, .comment_error, .kudos_error, .alert.flash {
 		background: var(--color-efd1d1);
 		border-color: #712727;
 		box-shadow: 1px 1px 2px #712727;
