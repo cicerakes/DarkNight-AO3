@@ -123,6 +123,10 @@
 		margin: auto;
 	}
 
+	.userstuff blockquote {
+		border-color: var(--color-999);
+	}
+
 	table {
 		background: var(--color-ddd);
 	}
