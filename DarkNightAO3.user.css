@@ -337,7 +337,7 @@
 		box-shadow: 1px 2px 5px #000;
 	}
 
-	.actions a, .actions a:link, .action, .action:link, .actions input, input[type="submit"], button, .current, .actions label {
+	.actions a, .actions a:link, .action, .action:link, .actions button, .actions input, input[type="submit"], button, .current, .actions label {
 		background: var(--color-eee);
 		color: var(--button-text-color);
 		border-color: var(--color-bbb);
@@ -348,7 +348,7 @@
 		background-image: linear-gradient(#3a3a3a 2%, #202020 95%, #1a1a1a 100%);
 	}
 
-	.actions a:hover, .actions input:hover, .actions a:focus, .actions input:focus, label.action:hover, .action:hover, .action:focus {
+	.actions a:hover, .actions button:hover, .actions input:hover, .actions a:focus, .actions button:focus, .actions input:focus, label.action:hover, .action:hover, .action:focus {
 		color: var(--button-hover-text-color);
 		border-top-color: var(--color-ccc);
 		border-left-color: var(--color-ccc);
