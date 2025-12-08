@@ -382,7 +382,7 @@
 		color: #900;
 	}
 
-	.secondarym, .work.navigation .download, .javascript .work.navigation .download .secondary {
+	.secondary, .work.navigation .download, .javascript .work.navigation .download .secondary {
 		background: var(--bg-color);
 		border: 2px solid var(--color-bbb);
 		box-shadow: 2px 2px 5px #000;
