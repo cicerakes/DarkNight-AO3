@@ -129,6 +129,7 @@
 
 	.userstuff blockquote {
 		border-color: var(--color-999);
+		line-height: var(--line-height);
 	}
 
 	table {
