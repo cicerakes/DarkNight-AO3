@@ -66,7 +66,7 @@
 		--color-rgb-255: 26, 26, 26;
 	}
 
-	body, .toggled form, .dynamic form, .secondary, .dropdown {
+	body, .toggled form, .dynamic form, .dropdown {
 		background: var(--bg-color);
 		color: var(--text-color);
 	}
@@ -378,7 +378,8 @@
 		color: #900;
 	}
 
-	.secondary {
+	.secondarym, .work.navigation .download, .javascript .work.navigation .download .secondary {
+		background: var(--bg-color);
 		border: 2px solid var(--color-bbb);
 		box-shadow: 2px 2px 5px #000;
 	}
