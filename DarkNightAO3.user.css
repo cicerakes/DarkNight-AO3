@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name			Dark/Night Archive of Our Own
 @namespace		cicerakes
-@version		2.3.0
+@version		2.4.0
 @description	A dark/night theme for archiveofourown.org.
 @author			cicerakes
 @license		CC-BY-SA-4.0
@@ -28,6 +28,9 @@
 @var color		bHCol	"Button Hover Text Colour"		#DD1919
 @var color		vLCol	"Visited Link Colour"			#777777
 @var color		tALCol	"Title/Author(s) Link Colour"	#C53131
+@var color		relTCol	"Relationship Tag Link Colour"	#CECECE
+@var color		chrTCol	"Character Tag Link Colour"		#CECECE
+@var color		ffTCol	"Freeform Tag Link Colour"		#CECECE
 @var number		wWidth	"Work Width (%)"				[100, 1, 100, 1, "%"]
 @var select		sTA		"Summary Text Alignment" {
 	"Justify (AO3 default)": "",
@@ -53,6 +56,9 @@
 		--button-hover-text-color: /*[[bHCol]]*/;
 		--red-link-color: /*[[tALCol]]*/;
 		--red-text-color: #aa1818;
+		--relationship-tag-color: /*[[relTCol]]*/;
+		--character-tag-color: /*[[chrTCol]]*/;
+		--freeform-tag-color: /*[[ffTCol]]*/;
 		--color-888: #8a8a8a;
 		--color-999: #7a7a7a;
 		--color-aaa: #6a6a6a;
@@ -647,6 +653,18 @@
 
 	.icon img[src="/images/skins/iconsets/default/icon_user.png"], .comment .icon .visitor {
 		filter: invert(90%);
+	}
+
+	.relationships a {
+		color: var(--relationship-tag-color);
+	}
+
+	.characters a {
+		color: var(--character-tag-color);
+	}
+
+	.freeforms a {
+		color: var(--freeform-tag-color);
 	}
 
 	/* Userscripts */
